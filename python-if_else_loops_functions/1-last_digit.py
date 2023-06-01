@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-print("Last digit of {} is ".format(number), end="")
+print("Last digit of %i is " %number, end="")
 if number < 0:
     number *= -1
 if number % 10 > 5:
