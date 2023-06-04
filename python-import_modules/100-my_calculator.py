@@ -19,6 +19,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     ac = len(av)
     if ac != 4:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         s_exit(1)
     res = func_op(int(av[1]), int(av[3]), av[2])
     print("{} {} {} = {}".format(av[1], av[2], av[3], res))
