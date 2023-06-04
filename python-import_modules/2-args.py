@@ -4,6 +4,7 @@ def print_argv(argv, length):
     for i in range(1, length):
         print("{}: {}".format(i, argv[i]))
 
+
 if __name__ == "__main__":
     from sys import argv
     length = len(argv) - 1
