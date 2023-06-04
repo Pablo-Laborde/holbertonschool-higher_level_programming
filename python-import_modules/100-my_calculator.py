@@ -1,21 +1,5 @@
 #!/usr/bin/python3
 
-def add(a, b):
-    return (a + b)
-
-
-def sub(a, b):
-    return (a - b)
-
-
-def mul(a, b):
-    return (a * b)
-
-
-def div(a, b):
-    return (a / b)
-
-
 def func_op(a, b, op):
     if op == '+':
         return (add(a, b))
@@ -32,6 +16,7 @@ def func_op(a, b, op):
 
 if __name__ == "__main__":
     from sys import argv as av, exit as s_exit
+    from calculator_1 import add, sub, mul, div
     ac = len(av)
     if ac != 4:
         s_exit(1)
