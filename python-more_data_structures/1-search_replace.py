@@ -7,4 +7,4 @@ def search_replace(my_list, search, replace):
             nl.append(replace)
         else:
             nl.append(my_list[i])
-    return my_list
+    return nl
