@@ -6,11 +6,12 @@ def roman_to_int(roman_string):
         length = len(roman_string)
         for i in range(length):
             if i < length - 1 and\
-                conv_let(roman_string[i]) < conv_let(roman_string[i + 1]):
-                    sum -= conv_let(roman_string[i])
+                    conv_let(roman_string[i]) < conv_let(roman_string[i + 1]):
+                sum -= conv_let(roman_string[i])
             else:
                 sum += conv_let(roman_string[i])
     return sum
+
 
 def conv_let(letter):
     if letter == 'I':
