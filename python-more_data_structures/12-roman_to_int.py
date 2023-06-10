@@ -5,8 +5,8 @@ def roman_to_int(roman_string):
     if isinstance(roman_string, str):
         length = len(roman_string)
         for i in range(length):
-            if i < length - 1:
-                if conv_let(roman_string[i]) < conv_let(roman_string[i + 1]):
+            if i < length - 1 and\
+                conv_let(roman_string[i]) < conv_let(roman_string[i + 1]):
                     sum -= conv_let(roman_string[i])
             else:
                 sum += conv_let(roman_string[i])
