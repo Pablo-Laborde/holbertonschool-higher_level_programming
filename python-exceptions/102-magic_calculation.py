@@ -11,8 +11,3 @@ def magic_calculation(a, b):
             result = b + a
             break
         return result
-
-
-if __name__ == "__main__":
-    import dis
-    dis.dis(magic_calculation)
