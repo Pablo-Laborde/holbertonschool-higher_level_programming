@@ -18,23 +18,23 @@ class Square:
     def __eq__(self, other):
         """ equals """
         return self.size == other.size
-    
+
     def __ne__(self, other):
         """ not equal """
         return self.size != other.size
-    
+
     def __lt__(self, other):
         """ less than """
         return self.size < other.size
-    
+
     def __gt__(self, other):
         """ greater than """
         return self.size > other.size
-    
+
     def __le__(self, other):
         """ less or equal """
         return self.size <= other.size
-    
+
     def __ge__(self, other):
         """ greater or equal """
         return self.size >= other.size
