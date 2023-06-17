@@ -3,4 +3,4 @@
 
 
 class Rectangle:
-   pass
+   """ class def """
