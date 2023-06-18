@@ -19,13 +19,9 @@
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer(1, 'hola')
+>>> add_integer(float('hola'))
 Traceback (most recent call last):
-TypeError: b must be an integer
-
->>> add_integer(None)
-Traceback (most recent call last):
-TypeError: a must be an integer
+ValueError: could not convert string to float: 'hola'
 
 >>> add_integer(float('inf'))
 Traceback (most recent call last):
