@@ -3,6 +3,7 @@
 
 
 def matrix_divided(matrix, div):
+    """ Function Comment"""
     for i in matrix:
         for j in i:
             if (type(j) != int) and (type(j) != float):
