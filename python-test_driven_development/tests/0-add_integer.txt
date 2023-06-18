@@ -15,6 +15,10 @@
 >>> add_integer(10.3, -7.7)
 3
 
+>>> add_integer('hola', 1)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
 >>> add_integer(1, 'hola')
 Traceback (most recent call last):
 TypeError: b must be an integer
