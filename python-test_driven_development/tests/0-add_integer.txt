@@ -9,11 +9,11 @@
 >>> add_integer(10, -7)
 3
 
->>> add_integer('hola', 1)
+>>> add_integer([])
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer("c", "d")
+>>> add_integer('hola', 1)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
