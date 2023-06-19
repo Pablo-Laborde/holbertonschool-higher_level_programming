@@ -4,7 +4,7 @@
 Hola
 
 >>> text_indentation("Hola.Como")
-Hola
+Hola.
 <BLANKLINE>
 Como
 
