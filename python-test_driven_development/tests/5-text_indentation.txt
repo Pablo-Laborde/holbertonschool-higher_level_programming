@@ -8,12 +8,12 @@ Hola.
 <BLANKLINE>
 Como
 
->>> text_indentation("Hola.Como: sadsadsad?")
+>>> text_indentation("Hola.Como: sadsadsad, si?")
 Hola.
 <BLANKLINE>
 Como:
 <BLANKLINE>
-sadsadsad?
+sadsadsad, si?
 <BLANKLINE>
 
 >>> text_indentation(5)
