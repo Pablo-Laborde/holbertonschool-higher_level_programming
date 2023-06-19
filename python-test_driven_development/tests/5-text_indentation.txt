@@ -3,6 +3,11 @@
 >>> text_indentation("Hola")
 Hola
 
+>>> text_indentation("Hola.Como")
+Hola
+<BLANKLINE>
+Como
+
 >>> text_indentation(5)
 Traceback (most recent call last):
 TypeError: text must be a string
