@@ -8,6 +8,14 @@ Hola.
 <BLANKLINE>
 Como
 
+>>> text_indentation("Hola.Como: sadsadsad?")
+Hola.
+<BLANKLINE>
+Como:
+<BLANKLINE>
+sadsadsad?
+<BLANKLINE>
+
 >>> text_indentation(5)
 Traceback (most recent call last):
 TypeError: text must be a string
