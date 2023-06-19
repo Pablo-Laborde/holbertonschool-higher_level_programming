@@ -6,7 +6,7 @@ def text_indentation(text):
     """ text identation """
     if type(text) != str:
         raise TypeError("text must be a string")
-    x = text
+    x = '' + text
     x = x.replace(". ", ".")
     x = x.replace(".", ".\n\n")
     x = x.replace("? ", "?")
