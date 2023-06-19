@@ -6,3 +6,7 @@ My name is Pablo Laborde
 >>> say_my_name(2, "Laborde")
 Traceback (most recent call last):
 TypeError: first_name must be a string
+
+>>> say_my_name("Laborde", 5)
+Traceback (most recent call last):
+TypeError: last_name must be a string
