@@ -2,4 +2,5 @@
 
 def lookup(obj):
     # print(type(dir(obj)))
-    return (dir(obj))
+    nl = dir(obj)
+    return nl
