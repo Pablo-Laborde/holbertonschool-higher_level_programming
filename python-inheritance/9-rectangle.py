@@ -8,7 +8,7 @@ class Rectangle(BG):
     """ Rectangle class """
 
     def __init__(self, width, height):
-        """ init """
+        """ initialize the rectangle """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
