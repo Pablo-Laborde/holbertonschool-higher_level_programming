@@ -54,10 +54,10 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 
 
 
->>> bg.integer_validator("name", "John")
+>>> bg.integer_validator("age", 0)
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+ValueError: age must be greater than 0
 
 
 
