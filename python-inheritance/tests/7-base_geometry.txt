@@ -52,10 +52,10 @@ Checks .integer_validator empty parameters
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-Checks .integer_validator empty parameters
->>> bg.integer_validator("name", 5, 7)
+Checks .integer_validator if value = int
+>>> bg.integer_validator("name", int)
 Traceback (most recent call last):
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
+TypeError: name must be an integer
 
 
 
@@ -130,3 +130,8 @@ Checks .area output
 >>> bg.area(5)
 Traceback (most recent call last):
 TypeError: area() takes 1 positional argument but 2 were given
+
+Checks .integer_validator empty parameters
+>>> bg.integer_validator("name", 5, 7)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
