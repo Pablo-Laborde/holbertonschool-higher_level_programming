@@ -38,15 +38,9 @@ Two Elemnts Unsorted
 [1, 4]
 
 
-Floats Values
->>> my_list = MyList()
->>> my_list.append(4.5)
->>> my_list.append(1.2)
->>> my_list.append(3)
->>> print(my_list)
-[4.5, 1.2, 3]
->>> my_list.print_sorted()
-[1.2, 3, 4.5]
+>>> my_list = MyList(None)
+Traceback (most recent call last):
+TypeError: 'NoneType' object is not iterable
 
 
 NaN values
@@ -85,6 +79,17 @@ Large Exaqmple
 [-2, 8, 20, -5, 4, 1, 0]
 >>> my_list.print_sorted()
 [-5, -2, 0, 1, 4, 8, 20]
+
+
+Floats Values
+>>> my_list = MyList()
+>>> my_list.append(4.5)
+>>> my_list.append(1.2)
+>>> my_list.append(3)
+>>> print(my_list)
+[4.5, 1.2, 3]
+>>> my_list.print_sorted()
+[1.2, 3, 4.5]
 
 
 TypeError Example
