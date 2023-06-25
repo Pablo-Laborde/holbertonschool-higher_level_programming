@@ -47,8 +47,8 @@ Checks .integer_validator if value = set
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = dic
->>> bg.integer_validator("name", {"name": "Jhon", "age": 23})
+Checks .integer_validator if value = set empty
+>>> bg.integer_validator("name", set())
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -97,5 +97,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = bytearray
 >>> bg.integer_validator("name", bytearray())
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = dic
+>>> bg.integer_validator("name", {"name": "Jhon", "age": 23})
 Traceback (most recent call last):
 TypeError: name must be an integer
