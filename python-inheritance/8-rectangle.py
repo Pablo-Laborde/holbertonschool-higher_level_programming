@@ -20,8 +20,8 @@ class Rectangle(BaseGeometry):
     """ Rectangle class """
 
     """ variables """
-    __width = 0
-    __height = 0
+    __width = int
+    __height = int
 
     def __init__(self, width, height):
         """ init """
