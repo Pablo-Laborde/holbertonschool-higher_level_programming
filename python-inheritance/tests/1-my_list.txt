@@ -38,10 +38,21 @@ Two Elemnts Unsorted
 [1, 4]
 
 
-Repeated values
+NaN values
 >>> my_list = MyList()
 >>> my_list.append('nan')
 >>> print(my_list)
 ['nan']
 >>> my_list.print_sorted()
 ['nan']
+
+
+Negative values
+>>> my_list = MyList()
+>>> my_list.append(-2)
+>>> my_list.append(1)
+>>> my_list.append(-5)
+>>> print(my_list)
+[-2, 1, -5]
+>>> my_list.print_sorted()
+[-5, -2, 1]
