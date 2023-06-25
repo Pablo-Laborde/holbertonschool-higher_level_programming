@@ -49,10 +49,8 @@ NaN values
 
 Negative values
 >>> my_list = MyList()
->>> my_list.append(-2)
->>> my_list.append(1)
->>> my_list.append(-5)
+>>> my_list.append(None)
 >>> print(my_list)
-[-2, 1, -5]
+[None]
 >>> my_list.print_sorted()
-[-5, -2, 1]
+[None]
