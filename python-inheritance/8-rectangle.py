@@ -9,7 +9,9 @@ class Rectangle(BG):
 
     """ variables """
     __width = int
+    """ width """
     __height = int
+    """ height """
 
     def __init__(self, width, height):
         """ init """
