@@ -49,9 +49,8 @@ NaN values
 
 Two Elemnts Unsorted
 >>> my_list = MyList()
->>> my_list.append(True)
->>> my_list.append(False)
+>>> my_list.append("True")
 >>> print(my_list)
-[True, False]
+['True']
 >>> my_list.print_sorted()
-[False, True]
+['True']
