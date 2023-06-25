@@ -32,8 +32,8 @@ Checks .integer_validator if value = bool
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = dic
->>> bg.integer_validator("name", {})
+Checks .integer_validator if value = tuple
+>>> bg.integer_validator("name", ())
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -52,5 +52,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = float
 >>> bg.integer_validator("name", 9.7)
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = dic
+>>> bg.integer_validator("name", {})
 Traceback (most recent call last):
 TypeError: name must be an integer
