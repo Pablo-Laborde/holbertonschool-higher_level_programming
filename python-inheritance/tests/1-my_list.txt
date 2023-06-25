@@ -48,7 +48,11 @@ NaN values
 
 
 Type checks
+
 >>> type(my_list) == MyList
+True
+
+>>> issubclass(MyList, list)
 True
 
 
