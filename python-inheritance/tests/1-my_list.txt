@@ -49,8 +49,10 @@ NaN values
 
 Two Elemnts Unsorted
 >>> my_list = MyList()
+>>> my_list.append(1)
 >>> my_list.append("True")
 >>> print(my_list)
-['True']
+[1, 'True']
 >>> my_list.print_sorted()
-['True']
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'str' and 'int'
