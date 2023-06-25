@@ -47,6 +47,10 @@ NaN values
 ['nan']
 
 
+Type checks
+>>> type(my_list) == MyList
+True
+
 
 ------- Examples that doesn't add checks
 
