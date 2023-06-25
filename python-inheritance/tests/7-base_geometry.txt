@@ -42,8 +42,8 @@ Checks .integer_validator if value = list
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = range
->>> bg.integer_validator("name", range)
+Checks .integer_validator if value = bytearray
+>>> bg.integer_validator("name", bytearray())
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -82,5 +82,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = complex
 >>> bg.integer_validator("name", complex(5, 1))
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = range
+>>> bg.integer_validator("name", range)
 Traceback (most recent call last):
 TypeError: name must be an integer
