@@ -52,6 +52,11 @@ Checks .integer_validator empty parameters
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
+Checks .integer_validator 1 missing parameter
+>>> bg.integer_validator(4)
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
 
 
 ------- Examples that doesn't add checks
