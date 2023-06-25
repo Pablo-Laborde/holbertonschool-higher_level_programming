@@ -40,9 +40,8 @@ Two Elemnts Unsorted
 
 Repeated values
 >>> my_list = MyList()
->>> my_list.append(0)
->>> my_list.append(0)
+>>> my_list.append('nan')
 >>> print(my_list)
-[0, 0]
+['nan']
 >>> my_list.print_sorted()
-[0, 0]
+['nan']
