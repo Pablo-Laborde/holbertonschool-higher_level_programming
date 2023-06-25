@@ -52,10 +52,10 @@ Checks .integer_validator empty parameters
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-Checks .integer_validator 1 missing parameter
->>> bg.integer_validator(4)
+Checks .area output
+>>> bg.area(5)
 Traceback (most recent call last):
-TypeError: integer_validator() missing 1 required positional argument: 'value'
+TypeError: area() takes 1 positional argument but 2 were given
 
 
 
@@ -120,3 +120,8 @@ Checks .integer_validator if value = frozenset
 >>> bg.integer_validator("name", frozenset())
 Traceback (most recent call last):
 TypeError: name must be an integer
+
+Checks .integer_validator 1 missing parameter
+>>> bg.integer_validator(4)
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
