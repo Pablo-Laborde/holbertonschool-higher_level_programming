@@ -20,5 +20,4 @@ class Rectangle(BG):
 
     def __str__(self):
         """ prints rectangle data """
-        self.selfprint()
         return f"[Rectangle] {self.__width}/{self.__height}"
