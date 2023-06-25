@@ -47,10 +47,11 @@ Checks .integer_validator if value = set
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = set empty
->>> bg.integer_validator("name", set())
+Checks .integer_validator if value = frozenset
+>>> bg.integer_validator("name", frozenset())
 Traceback (most recent call last):
 TypeError: name must be an integer
+
 
 
 ------- Examples that doesn't add checks
@@ -102,5 +103,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = dic
 >>> bg.integer_validator("name", {"name": "Jhon", "age": 23})
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = set empty
+>>> bg.integer_validator("name", set())
 Traceback (most recent call last):
 TypeError: name must be an integer
