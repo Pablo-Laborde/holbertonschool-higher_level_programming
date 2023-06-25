@@ -47,10 +47,10 @@ Checks .integer_validator if value = set
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = frozenset
->>> bg.integer_validator("name", frozenset())
+Checks .integer_validator empty parameters
+>>> bg.integer_validator()
 Traceback (most recent call last):
-TypeError: name must be an integer
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
 
@@ -108,5 +108,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = set empty
 >>> bg.integer_validator("name", set())
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = frozenset
+>>> bg.integer_validator("name", frozenset())
 Traceback (most recent call last):
 TypeError: name must be an integer
