@@ -15,7 +15,7 @@ class Rectangle(BG):
         self.__height = height
 
     def area(self):
-        """ area """
+        """ returns the area """
         return self.__height * self.__width
 
     def __str__(self):
