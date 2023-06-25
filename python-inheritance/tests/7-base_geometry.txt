@@ -52,10 +52,7 @@ Checks .integer_validator empty parameters
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-Checks .integer_validator if value = BaseGeometry
->>> bg.integer_validator("name", BaseGeometry())
-Traceback (most recent call last):
-TypeError: name must be an integer
+>>> bg.integer_validator(None, 13)
 
 
 
@@ -138,5 +135,10 @@ TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
 Checks .integer_validator if value = int
 >>> bg.integer_validator("name", int)
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = BaseGeometry
+>>> bg.integer_validator("name", BaseGeometry())
 Traceback (most recent call last):
 TypeError: name must be an integer
