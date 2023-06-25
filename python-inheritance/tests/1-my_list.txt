@@ -47,10 +47,12 @@ NaN values
 ['nan']
 
 
-Negative values
+NaN values
 >>> my_list = MyList()
->>> my_list.append(None)
+>>> my_list.append('nan')
+>>> my_list.append(1)
 >>> print(my_list)
-[None]
+['nan', 1]
 >>> my_list.print_sorted()
-[None]
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'int' and 'str'
