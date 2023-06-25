@@ -42,8 +42,8 @@ Checks .integer_validator if value = list
 Traceback (most recent call last):
 TypeError: name must be an integer
 
-Checks .integer_validator if value = complex
->>> bg.integer_validator("name", complex(5, 1))
+Checks .integer_validator if value = range
+>>> bg.integer_validator("name", range)
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -77,5 +77,10 @@ TypeError: name must be an integer
 
 Checks .integer_validator if value = list
 >>> bg.integer_validator("name", [1, 2])
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+Checks .integer_validator if value = complex
+>>> bg.integer_validator("name", complex(5, 1))
 Traceback (most recent call last):
 TypeError: name must be an integer
