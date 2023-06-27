@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Rectangle File """
 
-Base = __import__('base').Base()
+Base = __import__('base').Base
 
 
 class Rectangle(Base):
