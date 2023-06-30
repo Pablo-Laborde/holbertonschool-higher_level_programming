@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Rectangle File """
 
-B = __import__('base').Base
+from models.base import Base
 
 
-class Rectangle(B):
+class Rectangle(Base):
     """ Rectangle class """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -13,10 +13,10 @@ class Rectangle(B):
             variables:
                 width / height / x / y
         """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
