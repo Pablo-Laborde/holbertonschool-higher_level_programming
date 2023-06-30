@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Rectangle File """
 
-from base import Base
+B = __import__('base').Base
 
 
-class Rectangle(Base):
+class Rectangle(B):
     """ Rectangle class """
 
     __width = 0
