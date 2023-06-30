@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Rectangle File """
 
-Base = __import__('base').Base()
+Base = __import__('base').Base
 
 
 class Rectangle(Base):
@@ -13,7 +13,7 @@ class Rectangle(Base):
     __y = 0
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ initialization """
+        """ initialization of rectangle """
         super().__init__(id)
         self.width = width
         self.height = height
