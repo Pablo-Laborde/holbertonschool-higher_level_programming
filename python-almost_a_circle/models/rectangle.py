@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Rectangle File """
 
+
 B = __import__('base').Base
 
 
@@ -24,8 +25,8 @@ class Rectangle(B):
     def width(self, width):
         if type(width) != int:
             raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueError("width must be >= 0")
+        if width <= 0:
+            raise ValueError("width must be > 0")
         self.__width = width
 
     @property
@@ -37,8 +38,8 @@ class Rectangle(B):
     def height(self, height):
         if type(height) != int:
             raise TypeError("height must be an integer")
-        if height < 0:
-            raise ValueError("height must be >= 0")
+        if height <= 0:
+            raise ValueError("height must be > 0")
         self.__height = height
 
     @property
@@ -66,3 +67,14 @@ class Rectangle(B):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+
+
+
+r1 = Rectangle(10, 2)
+print(r1.id)
+
+r2 = Rectangle(2, 10)
+print(r2.id)
+
+r3 = Rectangle(10, 2, 0, 0, 12)
+print(r3.id, f" : w:{r3.width} / h:{r3.height} / x:{r3.x} / y:{r3.y}")
