@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ Rectangle Unitest """
 
-
 import unittest
 from models.rectangle import Rectangle
+
 
 class TestMaxInt(unittest.TestCase):
     """ class test """
