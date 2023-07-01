@@ -19,11 +19,6 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    def __str__(self):
-        """ str print """
-        return f"[Rectangle] \
-            ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
-
     @property
     def width(self):
         """ rectangle's width """
@@ -86,3 +81,8 @@ class Rectangle(Base):
             for w in range(self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """ str print """
+        return f"[Rectangle] \
+({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
