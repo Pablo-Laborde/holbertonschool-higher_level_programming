@@ -91,7 +91,7 @@ class Rectangle(Base):
         return f"[Rectangle] \
 ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ updates the rectangle """
         length = len(args)
         if length > 4:
@@ -104,3 +104,14 @@ class Rectangle(Base):
             self.width = args[1]
         if length > 0:
             self.id = args[0]
+        for arg in kwargs:
+            if arg == "id":
+                self.id = kwargs[arg]
+            if arg == "width":
+                self.width = kwargs[arg]
+            if arg == "height":
+                self.height = kwargs[arg]
+            if arg == "x":
+                self.x = kwargs[arg]
+            if arg == "y":
+                self.y = kwargs[arg]
