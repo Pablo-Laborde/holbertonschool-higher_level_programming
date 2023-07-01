@@ -21,7 +21,7 @@ class Base():
     def to_json_string(list_dictionaries):
         """ json string """
         if list_dictionaries is None:
-            return json.dumps("[]")
+            return "[]"
         return json.dumps(list_dictionaries)
 
     def save_to_file(cls, list_objs):
@@ -29,3 +29,7 @@ class Base():
         filename = f"{cls.__class__.__name__}.json"
         with open(filename, "w") as o_file:
             o_file.write(cls.to_json_string(list_objs))
+
+    def from_json_string(json_string):
+        """ from json file """
+        return json.loads(json_string)
