@@ -115,3 +115,7 @@ class Rectangle(Base):
                 self.x = kwargs[arg]
             if arg == "y":
                 self.y = kwargs[arg]
+
+    def to_dictionary(self):
+        """ return dict """
+        return self.__dict__
