@@ -3,3 +3,10 @@
 
 
 import unittest
+from models.rectangle import Rectangle
+
+class TestMaxInt(unittest.TestCase):
+    """ class test """
+    def test_max_int(self):
+        self = Rectangle(2, 2)
+        self.x
