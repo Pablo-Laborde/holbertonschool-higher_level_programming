@@ -52,4 +52,4 @@ class Base():
     @classmethod
     def load_from_file(cls):
         """ load json """
-
+        pass
