@@ -18,3 +18,6 @@ class TestMaxInt(unittest.TestCase):
 
         obj3 = Base(100)
         self.assertEqual(obj3.id, 100)
+
+        obj4 = Base('nan')
+        self.assertEqual(obj4.id, 'nan')
