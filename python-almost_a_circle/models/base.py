@@ -21,7 +21,7 @@ class Base():
     def to_json_string(list_dictionaries):
         """ json string """
         if list_dictionaries is None:
-            return "[]"
+            json.dumps([])
         return json.dumps(list_dictionaries)
 
     @classmethod
