@@ -448,7 +448,7 @@ but 2 were given", str(e.exception))
         self.assertFalse(r1 is r2)
         self.assertTrue(r1.to_dictionary() == r2.to_dictionary())
 
-    """def test_16_1(self):
+    def test_16_1(self):
         ''' Testing save_to_file method '''
         self.set_zero()
         r1 = Rectangle(1, 2, 3, 4)
@@ -460,10 +460,10 @@ but 2 were given", str(e.exception))
             with open('Rectangle.json', 'r') as f:
                 print(f.read())
             output = string.getvalue()
-            self.assertEqual(output, '[{"id": 1, "width": 1, \
-"height": 2, "x": 3, "y": 4}, {"id": 2, "width": 5, \
-"height": 6, "x": 0, "y": 0}]\n')
-"""
+            self.assertEqual(output, '[{"x": 3, "y": 4, \
+"id": 1, "width": 1, "height": 2},\
+ {"x": 0, "y": 0, "id": 2, "width": 5, "height": 6}]\n')
+
     def test_16_2(self):
         ''' More tests for save_to_file method '''
         Rectangle.save_to_file([])
@@ -495,5 +495,5 @@ but 2 were given", str(e.exception))
             with open('Rectangle.json', 'r') as f:
                 print(f.read())
             output = string.getvalue()
-            self.assertEqual(output,\
-                             '[{"x": 0, "y": 0, "id": 1, "width": 1, "height": 1}]\n')
+            self.assertEqual(output, '[{"x": 0, "y": 0, "id": 1, \
+"width": 1, "height": 1}]\n')

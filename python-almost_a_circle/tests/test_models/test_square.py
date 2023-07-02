@@ -226,8 +226,8 @@ class RectangleTest(unittest.TestCase):
         ''' Tests for update method '''
         s = Square(10, 10, 10, 10)
         s.update(1, x=8, y=9, size=4, id=89)
-        self.assertEqual(s.__str__(), "[Square] (1) 10/10 - 10")
-"""
+        self.assertEqual(s.__str__(), "[Square] (1) 10/10 - 10")"""
+
     def test_12_8(self):
         ''' Tests for update method '''
         s = Square(10, 10, 10, 10)
@@ -288,7 +288,7 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(s1.to_dictionary(), {'x': 2, 'y': 0, 'id': 1,
                                               'size': 5})
 
-    """def test_16_3(self):
+    def test_16_3(self):
         ''' More tests for save_to_file method '''
         self.set_zero()
         r1 = Square(1, 2, 3, 4)
@@ -300,10 +300,9 @@ class RectangleTest(unittest.TestCase):
             with open('Square.json', 'r') as f:
                 print(f.read())
             output = string.getvalue()
-            self.assertEqual(output, '[{"id": 4, "size": 1, \
-"x": 2, "y": 3}, {"id": 1, "size": 5, \
-"x": 6, "y": 0}]\n')
-"""
+            self.assertEqual(output, '[{"x": 2, "y": 3, "id": 4, "size": 1}, \
+{"x": 6, "y": 0, "id": 1, "size": 5}]\n')
+
     def test_16_4(self):
         ''' More tests for save_to_file method '''
         Square.save_to_file([])
@@ -335,5 +334,5 @@ class RectangleTest(unittest.TestCase):
             with open('Square.json', 'r') as f:
                 print(f.read())
             output = string.getvalue()
-            self.assertEqual(output,\
-                             '[{"x": 0, "y": 0, "id": 1, "size": 1}]\n')
+            self.assertEqual(output, '[{"x": 0, "y": 0, \
+"id": 1, "size": 1}]\n')
