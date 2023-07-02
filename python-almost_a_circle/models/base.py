@@ -54,9 +54,13 @@ class Base():
     @classmethod
     def load_from_file(cls):
         """ load json """
+        myl =[]
         filename = f"{cls.__name__}.json"
         try:
             with open(filename, "r", encoding="UTF8") as i_file:
-                return cls.from_json_string(i_file.read())
+                myla = cls.from_json_string(i_file.read())
+                for elm in myla:
+                    myl.append(cls.create(**elm))
         except FileNotFoundError:
-            return cls.from_json_string(None)
+            pass
+        return myl
