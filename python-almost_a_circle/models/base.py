@@ -29,8 +29,11 @@ class Base():
         """ to json file """
         filename = f"{cls.__class__.__name__}.json"
         with open(filename, "w") as o_file:
-            for elm in list_objs:
-                o_file.write(cls.to_json_string(elm.to_dictionary()))
+            if list_objs is None:
+                o_file.write(cls.to_json_string(None))
+            else:
+                for elm in list_objs:
+                    o_file.write(cls.to_json_string(elm.to_dictionary()))
 
     @staticmethod
     def from_json_string(json_string):
