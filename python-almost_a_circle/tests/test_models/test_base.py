@@ -16,5 +16,5 @@ class TestMaxInt(unittest.TestCase):
         obj2 = Base()
         self.assertEqual(obj2.id, 2)
 
-        obj3 = Base(10)
-        self.assertEqual(obj3.id, 10)
+        obj3 = Base(100)
+        self.assertEqual(obj3.id, 100)
