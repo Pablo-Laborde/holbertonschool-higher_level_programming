@@ -216,12 +216,12 @@ class RectangleTest(unittest.TestCase):
         s.update(10, 2, 3, 4, "5")
         self.assertEqual(s.__str__(), "[Square] (10) 3/4 - 2")
 
-    """def test_12_6(self):
+    def test_12_6(self):
         ''' Tests for update method '''
         s = Square(10, 10, 10, 10)
         s.update(10, 2, 3, 4, x=8, y=9, size=4, id=89)
         self.assertEqual(s.__str__(), "[Square] (10) 3/4 - 2")
-"""
+
     """def test_12_7(self):
         ''' Tests for update method '''
         s = Square(10, 10, 10, 10)
@@ -326,7 +326,7 @@ class RectangleTest(unittest.TestCase):
             output = string.getvalue()
             self.assertEqual(output, "[]\n")
 
-    """def test_16_7(self):
+    def test_16_7(self):
         self.set_zero()
         Square.save_to_file([Square(1)])
         if os.path.exists('Square.json'):
@@ -335,6 +335,5 @@ class RectangleTest(unittest.TestCase):
             with open('Square.json', 'r') as f:
                 print(f.read())
             output = string.getvalue()
-            self.assertEqual(output, '[{"id": 1, "size": 1, \
-"x": 0, "y": 0}]\n')
-"""
+            self.assertEqual(output,\
+                             '[{"x": 0, "y": 0, "id": 1, "size": 1}]\n')
