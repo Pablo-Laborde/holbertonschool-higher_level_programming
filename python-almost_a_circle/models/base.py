@@ -32,8 +32,10 @@ class Base():
             if list_objs is None:
                 o_file.write(cls.to_json_string(None))
             else:
+                myl = []
                 for elm in list_objs:
-                    o_file.write(cls.to_json_string(elm.to_dictionary()))
+                    myl.append(elm.to_dictionary())
+                o_file.write(cls.to_json_string(myl))
 
     @staticmethod
     def from_json_string(json_string):
