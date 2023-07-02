@@ -39,7 +39,9 @@ class Base():
     @classmethod
     def create(cls, **dictionary):
         """ creates an obj """
-        if dictionary is not None:
+        if cls.__name__ == 'Base':
+            dummy = cls()
+        else:
             dummy = cls(1, 1)
             dummy.update(**dictionary)
-            return dummy
+        return dummy
