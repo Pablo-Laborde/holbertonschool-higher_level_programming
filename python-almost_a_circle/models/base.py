@@ -24,12 +24,17 @@ class Base():
             return "[]"
         return json.dumps(list_dictionaries)
 
+    @classmethod
     def save_to_file(cls, list_objs):
         """ to json file """
+        myl = []
+        for elm in list_objs:
+            myl.append(elm.to_dictionary())
         filename = f"{cls.__class__.__name__}.json"
         with open(filename, "w") as o_file:
-            o_file.write(cls.to_json_string(list_objs))
+            o_file.write(cls.to_json_string(myl))
 
+    @staticmethod
     def from_json_string(json_string):
         """ from json file """
         if json_string is None:
