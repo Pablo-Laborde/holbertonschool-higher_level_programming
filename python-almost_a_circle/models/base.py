@@ -54,7 +54,7 @@ class Base():
     @classmethod
     def load_from_file(cls):
         """ load json """
-        myl =[]
+        myl = []
         filename = f"{cls.__name__}.json"
         try:
             with open(filename, "r", encoding="UTF8") as i_file:
