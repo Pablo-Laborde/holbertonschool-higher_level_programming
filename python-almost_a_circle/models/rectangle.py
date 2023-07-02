@@ -93,17 +93,6 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ updates the rectangle """
-        length = len(args)
-        if length > 4:
-            self.y = args[4]
-        if length > 3:
-            self.x = args[3]
-        if length > 2:
-            self.height = args[2]
-        if length > 1:
-            self.width = args[1]
-        if length > 0:
-            self.id = args[0]
         for arg in kwargs:
             if arg == "id":
                 self.id = kwargs[arg]
@@ -115,6 +104,17 @@ class Rectangle(Base):
                 self.x = kwargs[arg]
             if arg == "y":
                 self.y = kwargs[arg]
+        length = len(args)
+        if length > 4:
+            self.y = args[4]
+        if length > 3:
+            self.x = args[3]
+        if length > 2:
+            self.height = args[2]
+        if length > 1:
+            self.width = args[1]
+        if length > 0:
+            self.id = args[0]
 
     def to_dictionary(self):
         """ return dict """
