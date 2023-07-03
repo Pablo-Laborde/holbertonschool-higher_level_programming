@@ -390,27 +390,27 @@ but 2 were given", str(e.exception))
         r.update(id=15, x=2)
         self.assertEqual(r.__str__(), "[Rectangle] (15) 2/9 - 4/5")
 
-    """def test_9_9(self):
+    def test_9_9(self):
         ''' Tests for update method '''
         r = Rectangle(10, 10, 10, 10, 10)
         r.update(1, 1, 1, 1, 1, x=8, y=9, width=4, height=5, id=89, test=10)
         self.assertEqual(r.__str__(), "[Rectangle] (1) 1/1 - 1/1")
-"""
-    """def test_9_10(self):
+
+    def test_9_10(self):
         ''' Tests for update method '''
         self.set_zero()
         r = Rectangle(2, 2)
         r.update(16, 7, x=8, y=9, width=4, height=5, id=89, test=10)
         self.assertEqual(r.__str__(), "[Rectangle] (16) 0/0 - 7/2")
-"""
-    """def test_9_11(self):
+
+    def test_9_11(self):
         ''' Tests for update method '''
         self.set_zero()
         r = Rectangle(2, 2)
         r.update(16, 7, x=8, y=9, width=4, height=5, id=89, test=10)
         r.update(id=15, x=2)
         self.assertEqual(r.__str__(), "[Rectangle] (15) 2/0 - 7/2")
-"""
+
     def test_13_1(self):
         ''' Tests for to_dictionary method '''
         r = Rectangle(1, 2, 3, 4, 5)

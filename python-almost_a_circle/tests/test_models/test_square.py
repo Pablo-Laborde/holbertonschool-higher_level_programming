@@ -222,11 +222,11 @@ class RectangleTest(unittest.TestCase):
         s.update(10, 2, 3, 4, x=8, y=9, size=4, id=89)
         self.assertEqual(s.__str__(), "[Square] (10) 3/4 - 2")
 
-    """def test_12_7(self):
+    def test_12_7(self):
         ''' Tests for update method '''
         s = Square(10, 10, 10, 10)
         s.update(1, x=8, y=9, size=4, id=89)
-        self.assertEqual(s.__str__(), "[Square] (1) 10/10 - 10")"""
+        self.assertEqual(s.__str__(), "[Square] (1) 10/10 - 10")
 
     def test_12_8(self):
         ''' Tests for update method '''
