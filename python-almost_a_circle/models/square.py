@@ -27,26 +27,28 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """ updates the rectangle """
-        for arg in kwargs:
-            if arg == "id":
-                self.id = kwargs[arg]
-            if arg == "size":
-                self.width = kwargs[arg]
-                self.height = kwargs[arg]
-            if arg == "x":
-                self.x = kwargs[arg]
-            if arg == "y":
-                self.y = kwargs[arg]
-        length = len(args)
-        if length > 3:
-            self.y = args[3]
-        if length > 2:
-            self.x = args[2]
-        if length > 1:
-            self.width = args[1]
-            self.height = args[1]
-        if length > 0:
-            self.id = args[0]
+        if len(args) == 0:
+            for arg in kwargs:
+                if arg == "id":
+                    self.id = kwargs[arg]
+                if arg == "size":
+                    self.width = kwargs[arg]
+                    self.height = kwargs[arg]
+                if arg == "x":
+                    self.x = kwargs[arg]
+                if arg == "y":
+                    self.y = kwargs[arg]
+        else:
+            length = len(args)
+            if length > 3:
+                self.y = args[3]
+            if length > 2:
+                self.x = args[2]
+            if length > 1:
+                self.width = args[1]
+                self.height = args[1]
+            if length > 0:
+                self.id = args[0]
 
     def to_dictionary(self):
         """ return dict """
